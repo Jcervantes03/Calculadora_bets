@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Probabilidad y Overround</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Calculadora de Overround</h2>
+    <p>¿Cuántos eventos quieres calcular? (2 o 3)</p>
+    <input type="number" id="numEvents" min="2" max="3" placeholder="Ingresa 2 o 3">
+    <button onclick="createInputFields()">Aceptar</button>
+    
+    <div id="inputFields" class="input-fields"></div>
+    
+    <button onclick="calculate()" style="display: none;" id="calculateBtn">Calcular</button>
+
+    <div class="result-container" id="result"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
